@@ -86,7 +86,7 @@
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
         .toggle-dark-mode:hover {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(360deg);
         }
         .button-container {
             display: flex;
@@ -94,7 +94,8 @@
             margin-top: 10px;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Include the local QRCode library -->
+    <script src="qrcode.min.js"></script>
 </head>
 <body>
     <button class="toggle-dark-mode" onclick="toggleDarkMode()">🌙</button>
